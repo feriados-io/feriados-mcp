@@ -1,6 +1,6 @@
 {
   "name": "@feriados-io/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for the feriados.io API — Latin American holidays & business days",
   "type": "module",
   "main": "dist/index.js",
@@ -8,7 +8,7 @@
     "feriados-mcp": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod +x dist/index.js",
     "dev": "tsc --watch",
     "start": "node dist/index.js",
     "prepare": "npm run build"
