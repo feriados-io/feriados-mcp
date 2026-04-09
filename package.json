@@ -1,0 +1,41 @@
+{
+  "name": "@feriados-io/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the feriados.io API — Latin American holidays & business days",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "feriados-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mcp",
+    "holidays",
+    "feriados",
+    "latam",
+    "latin-america",
+    "business-days",
+    "claude",
+    "model-context-protocol"
+  ],
+  "author": "feriados.io",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
